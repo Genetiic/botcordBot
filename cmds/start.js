@@ -40,7 +40,7 @@ module.exports.run = async (bot, message, args) => {
     }
    
     let startMessage = new Discord.RichEmbed()
-        .setColor("#ff2658")
+        .setColor("#00d4ff")
         .setTitle("Scrim Match Starting!")
         .setDescription("Type your Bus Paths here by putting the start of the bus path and the end / last stop location. Ex: junk lazy")
         .addField("Hosted By", `${message.author}`, true)
@@ -56,7 +56,7 @@ module.exports.run = async (bot, message, args) => {
     let timeEmbed = new Discord.RichEmbed()
         .setTitle("Next match in aprox...")
         .setDescription(time + " minutes")
-        .setColor("#ff2658");
+        .setColor("#00d4ff");
        
  
     setTimeout(async () => {
@@ -84,7 +84,7 @@ module.exports.run = async (bot, message, args) => {
        
     let last3 = new Discord.RichEmbed()
         .setTitle("Bus Paths")
-        .setColor("#ff2658");
+        .setColor("#00d4ff");
  
     setTimeout(async () => {
         editLast3 = await message.channel.send({embed: last3});
@@ -138,7 +138,7 @@ module.exports.run = async (bot, message, args) => {
         last3 = new Discord.RichEmbed()
         .setTitle ("Bus Paths")
         .setThumbnail('https://cdn.discordapp.com/avatars/546540578565914624/04f03cc68982280090136b0ad9dbb389.png?size=256')
-        .setColor("#ff2658")
+        .setColor("#00d4ff")
  
         let playerCount = 0;
         for (var i = 0; i < game.data.length; i++){

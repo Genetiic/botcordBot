@@ -46,7 +46,7 @@ module.exports.run = async (bot, message, args) => {
         .addField("Hosted By", `${message.author}`, true)
         .addField("Gamemode", gamemode, true)
         .addField("Game ", "FORTNITE", true)
-        .setFooter(`${message.guild.name} / dev: Genetiicツ#6263 `, "https://cdn.discordapp.com/avatars/546540578565914624/04f03cc68982280090136b0ad9dbb389.png?size=256")
+        .setFooter(`${message.guild.name} / dev: Genetiicツ#6263 `, "https://cdn.discordapp.com/attachments/493493044553842709/574808185928679435/54732213_412739609527810_2627394551873543771_n.jpg")
     
     message.channel.send({embed: startMessage});    
  
@@ -137,7 +137,7 @@ module.exports.run = async (bot, message, args) => {
         let str = " ";
         last3 = new Discord.RichEmbed()
         .setTitle ("Bus Paths")
-        .setThumbnail('https://cdn.discordapp.com/avatars/546540578565914624/04f03cc68982280090136b0ad9dbb389.png?size=256')
+        .setThumbnail('https://cdn.discordapp.com/attachments/493493044553842709/574808185928679435/54732213_412739609527810_2627394551873543771_n.jpg')
         .setColor("#00d4ff")
  
         let playerCount = 0;
@@ -150,7 +150,7 @@ module.exports.run = async (bot, message, args) => {
                 str += game.data[i].users[j] + "\n";
             }
             last3.addField(`${game.data[i].id.toUpperCase()} - ${game.data[i].users.length} PLAYERS`, str, true);
-            last3.setFooter(`${game.data.length} Responses | ${playerCount} Players | ${members} Players In ${voice_channel.name}`, "https://cdn.discordapp.com/avatars/546540578565914624/04f03cc68982280090136b0ad9dbb389.png?size=256")
+            last3.setFooter(`${game.data.length} Responses | ${playerCount} Players | ${members} Players In ${voice_channel.name}`, "https://cdn.discordapp.com/attachments/493493044553842709/574808185928679435/54732213_412739609527810_2627394551873543771_n.jpg")
         }
             editLast3.edit({embed: last3}).catch((err) => {
                 console.log("Caught edit error");
